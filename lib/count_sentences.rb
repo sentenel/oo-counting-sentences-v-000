@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     binding.pry
-    self.gsub(/[^.?]+/, '.').gsub(/[^.?!]/, '').length
+    self.gsub(/[.?!]+/, '.').gsub(/[^.?!]/, '').length
   end
 end
